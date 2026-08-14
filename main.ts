@@ -235,18 +235,27 @@ quest_Note_1.quest_Show_String_For_Note_Big_Func(
 )
 quest_Dashboard.quest_Show_Oled_Cleared_Func(
 )
-quest_Dashboard.quest_Show_String_For_Oled_BigFont_Func(
+quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
 "BotId:" + quest_Dashboard.quest_Get_SerialName_OfMyBot_Func(
 ),
 0,
 0
 )
-quest_Dashboard.quest_Show_String_For_Oled_BigFont_Func(
-"Hello! :)",
+quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+"Wheel_Left:Left_Button",
 0,
 1
 )
-quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
+quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+"Wheel_Right:Right_Button",
+0,
+2
+)
+quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+"Wheels_Both:Both_Buttons",
+0,
+3
+)
 basic.forever(function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
     "©️ 2026 Encourage and Empower. All rights reserved."
