@@ -60,7 +60,7 @@ function setup_More_Function () {
     3
     )
     quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
-    "Wheels_Both:Logo_Press",
+    "Wheels_Both_+:Logo_Press",
     0,
     4
     )
