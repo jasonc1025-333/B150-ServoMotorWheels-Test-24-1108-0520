@@ -6,8 +6,8 @@ input.onButtonPressed(Button.A, function () {
         . # . . .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     50,
     0
     )
@@ -19,8 +19,8 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     0,
     0
     )
@@ -34,8 +34,8 @@ input.onButtonPressed(Button.AB, function () {
         . # . # .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     50,
     50
     )
@@ -47,8 +47,8 @@ input.onButtonPressed(Button.AB, function () {
         . . . . .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     0,
     0
     )
@@ -62,8 +62,8 @@ input.onButtonPressed(Button.B, function () {
         . . . # .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     0,
     50
     )
@@ -75,8 +75,8 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . # . # .
         `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     0,
     0
     )
@@ -91,8 +91,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         50,
         50,
         quest_Turn_Duration_Enum.msec_3000,
@@ -108,8 +108,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         -50,
         -50,
         quest_Turn_Duration_Enum.msec_3000,
@@ -125,8 +125,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         50,
         -50,
         quest_Turn_Duration_Enum.msec_3000,
@@ -142,8 +142,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         -50,
         50,
         quest_Turn_Duration_Enum.msec_3000,
@@ -159,8 +159,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_Turn_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_Turn_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         quest_Turn_Type_Enum.Pivot,
         quest_Turn_Direction_Enum.right,
         quest_Turn_Power_Enum.Lo,
@@ -177,8 +177,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             . . . . .
             . . . . .
             `)
-        quest_Motors.quest_Set_Turn_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+        EnE_Servos.quest_Set_Turn_WithTimer_Func(
+        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
         quest_Turn_Type_Enum.Pivot,
         quest_Turn_Direction_Enum.left,
         quest_Turn_Power_Enum.Lo,
@@ -200,5 +200,7 @@ quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Uni
 basic.showIcon(IconNames.Happy)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 basic.forever(function () {
-	
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "©️ 2026 Encourage and Empower. All rights reserved."
+    )
 })
