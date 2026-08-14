@@ -1,6 +1,6 @@
 {
     "name": "26-0814-0930-ene_b050_servo_wheels_test--26-0113-0021",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "description": "",
     "dependencies": {
         "core": "*",
