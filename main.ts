@@ -1,15 +1,21 @@
 input.onButtonPressed(Button.A, function () {
+    quest_Note_3.quest_Show_String_For_Note_Big_Func(
+    "Test Servo_Wheel: Right"
+    )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "'A' is Right Button from Driver's Viewpoint"
+    )
     basic.showLeds(`
-        . # . . .
-        # # # . .
-        . # . . .
-        . # . . .
+        . . . # .
+        . . # # #
+        . . . # .
+        . . . # .
         . # . # .
         `)
     EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
     quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
-    50,
-    0
+    0,
+    50
     )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     basic.showLeds(`
@@ -27,6 +33,12 @@ input.onButtonPressed(Button.A, function () {
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
 })
 input.onButtonPressed(Button.AB, function () {
+    quest_Note_3.quest_Show_String_For_Note_Big_Func(
+    "Test Servo_Wheels: Left + Right"
+    )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "Press Both 'A' + 'B' Buttons"
+    )
     basic.showLeds(`
         . # . # .
         # # # # #
@@ -39,7 +51,7 @@ input.onButtonPressed(Button.AB, function () {
     50,
     50
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
+    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -52,20 +64,26 @@ input.onButtonPressed(Button.AB, function () {
     0,
     0
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
+    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
 })
 input.onButtonPressed(Button.B, function () {
+    quest_Note_3.quest_Show_String_For_Note_Big_Func(
+    "Test Servo_Wheel: Left"
+    )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "'B' is Left Button from Driver's Viewpoint"
+    )
     basic.showLeds(`
-        . . . # .
-        . . # # #
-        . . . # .
-        . . . # .
+        . # . . .
+        # # # . .
+        . # . . .
+        . # . . .
         . # . # .
         `)
     EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
     quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
-    0,
-    50
+    50,
+    0
     )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     basic.showLeds(`
@@ -188,16 +206,46 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     }
 })
-quest_Note_1.quest_Show_String_For_Note_Small_Func(
-"Micro:bit is Upside-Down from Driver's Perspective"
+quest_Note_3.quest_Show_String_For_Note_Big_Func(
+"Setup Stack"
+)
+quest_Note_1.quest_Show_String_For_Note_Big_Func(
+"Micro:bit Display: Upside-Down ~ Driver's Viewpoint"
 )
 display.rotateTo(display.Direction.UpsideDown)
-quest_Note_1.quest_Show_String_For_Note_Small_Func(
-"2-Sequence Animation Validates New Start"
-)
-basic.showIcon(IconNames.Heart)
-quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 basic.showIcon(IconNames.Happy)
+quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
+quest_Note_1.quest_Show_String_For_Note_Big_Func(
+"Setup Servo_Wheels to Stop (0% Power)"
+)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . # . # .
+    `)
+EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
+0,
+0
+)
+quest_Note_1.quest_Show_String_For_Note_Big_Func(
+"Setup 1\" SmartScreen"
+)
+quest_Dashboard.quest_Show_Oled_Cleared_Func(
+)
+quest_Dashboard.quest_Show_String_For_Oled_BigFont_Func(
+"BotId:" + quest_Dashboard.quest_Get_SerialName_OfMyBot_Func(
+),
+0,
+0
+)
+quest_Dashboard.quest_Show_String_For_Oled_BigFont_Func(
+"Hello! :)",
+0,
+1
+)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 basic.forever(function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
