@@ -1,12 +1,3 @@
-function setup_Staff_ThisLessonOnly_Func () {
-	
-}
-function setup_System_AnyLessonAlways_Func () {
-	
-}
-function setup_Student_ThisLessonOnly_Func () {
-	
-}
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . # . . .
@@ -47,7 +38,7 @@ input.onButtonPressed(Button.AB, function () {
     50,
     50
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
+    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -194,10 +185,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     }
 })
-function pre_setup_System_AnyLessonAlways_Func () {
-    display.rotateTo(display.Direction.UpsideDown)
-}
-pre_setup_System_AnyLessonAlways_Func()
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
+"Micro:bit is Upside-Down from Driver's Perspective"
+)
+display.rotateTo(display.Direction.UpsideDown)
 quest_Note_1.quest_Show_String_For_Note_Small_Func(
 "2-Sequence Animation Validates New Start"
 )
@@ -205,14 +196,6 @@ basic.showIcon(IconNames.Heart)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 basic.showIcon(IconNames.Happy)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
-setup_System_AnyLessonAlways_Func()
-setup_Staff_ThisLessonOnly_Func()
-quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
-0,
-quest_Toggle_OnOff_Enum.On,
-quest_Debug_Show_Enum.Dashboard_OLED
-)
-quest_Note_2.quest_Show_String_For_Note_Small_Func(
-"Student Setup"
-)
-setup_Student_ThisLessonOnly_Func()
+basic.forever(function () {
+	
+})
