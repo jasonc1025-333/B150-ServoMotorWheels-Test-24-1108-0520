@@ -135,10 +135,10 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     quest_Note_3.quest_Show_String_For_Note_Big_Func(
-    "Test Servo_Wheels: Left + Right"
+    "Test Servo_Wheels_Longer: Left + Right"
     )
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
-    "Press Both 'A' + 'B' Buttons"
+    "Press Logo"
     )
     basic.showLeds(`
         . # . # .
