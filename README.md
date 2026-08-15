@@ -2,7 +2,7 @@
 <!--- add suffix '?raw=true' --->
 
 # **** ** Right-Side Panel-Guide ** 
-### [( Right-Side Panel-Guide Separate Web-Page )](https://jasonc1025-333.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final/)
+### [( Right-Side Panel-Guide Separate Web-Page )](https://jasonc1025-333.github.io/26-0814-0500-ene_b050_servo_wheels_test-autodrive_autonomous-basic_coding_template--24-1108-0520/)
 
 # A. Coding-Editor Setup:
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-03_01-20-51-Close-LeftSidePanel-05-Blur20.png?raw=true)
@@ -42,59 +42,3 @@
 # * AAA-1. Data-Dashbaord 
 # ** Connect:
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-01_20-09-20-OledDataDashboard-ConnectTo-MicrobitIoExpansionBoard.png?raw=true)
-# ** Code:
-![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-03_06-51-58-OledDataDashboard-Coding-02-LineWidth_4px-BlueOpacity_60.png?raw=true)
-<!--- Need following dummy blank line above for this upcoming divider_line to work --->
-
----
-# * BBB-1. ServoArm_Left: Default (degrees)
-# * BBB-2. ServoArm_Left: Up-Max (degrees)
-# * BBB-3. ServoArm_Left: Down-Max (degrees)
-# ** Connect
-![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-01_19-14-54-ServoArm_Left-ConnectTo-MicrobitIoExpansionBoard.png?raw=true)
-# ** Code
-![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-03_10-11-44-ServoArm-Coding-02.png?raw=true)
-<!--- Need following dummy blank line above for this upcoming divider_line to work --->
-
----
-# ZZZZ. FOR STAFF USE:
-
-# * ZZZZ-1. Staff: Chrome (Web) Browser ~ One-Time Setup 
-![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/11i-Media-24-0710-1300/2024-07-08_12-24-16-ChromeBrowser-OneTimeSetup.png?raw=true)
-
-# [* ZZZZ-2. Staff: Educator Training & Resource Guide (Quick Version): tinyurl.com/roboquest](https://sites.google.com/warriorlife.net/roboquest/home#h.qlnqac9aiv20)
-
-# [* ZZZZ-3 Staff: Educator Resource Guide (Detailed Version) ~ 1) Mod & Flash/Download Code, 2) Quick-Start & Troubleshoot Guide, & 3) Misc](https://prezi.com/view/FAS9L5Lf4o6THzCeSVEs/)
-![AltTag_24-0505-0112-21-RnDTutorial_08-PreziMapGuide-FrontScreen](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/24-0505-0112-21-RnDTutorial_08-PreziMapGuide-FrontScreen.png?raw=true)
-
-# THE END (For Staff)
-
-<!--- Need following dummy blank line above for this upcoming divider_line to work --->
-
----
-
-
-
-> Open this page at [https://jasonc1025-333.github.io/b150-servomotors-test-24-1108-0520/](https://jasonc1025-333.github.io/b150-servomotors-test-24-1108-0520/)
-
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/jasonc1025-333/b150-servomotors-test-24-1108-0520** and import
-
-## Edit this project
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/jasonc1025-333/b150-servomotors-test-24-1108-0520** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
