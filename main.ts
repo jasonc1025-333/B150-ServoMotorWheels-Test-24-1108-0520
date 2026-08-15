@@ -30,9 +30,12 @@ input.onButtonPressed(Button.A, function () {
     0,
     0
     )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "hold this state for 2 sec to be noticable enough"
+    )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 })
-function setup_More_Function () {
+function setup_Additional_Function () {
     quest_Note_1.quest_Show_String_For_Note_Big_Func(
     "Setup 1\" SmartScreen"
     )
@@ -87,6 +90,19 @@ input.onButtonPressed(Button.AB, function () {
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
     basic.showLeds(`
         . . . . .
+        . # . # .
+        . # . # .
+        # # # # #
+        . # . # .
+        `)
+    EnE_Servos.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
+    -50,
+    -50
+    )
+    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
+    basic.showLeds(`
+        . . . . .
         . . . . .
         . . . . .
         . . . . .
@@ -96,6 +112,9 @@ input.onButtonPressed(Button.AB, function () {
     quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Right,
     0,
     0
+    )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "hold this state for 2 sec to be noticable enough"
     )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 })
@@ -131,6 +150,9 @@ input.onButtonPressed(Button.B, function () {
     0,
     0
     )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "hold this state for 2 sec to be noticable enough"
+    )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -165,18 +187,24 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     0,
     0
     )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "hold this state for 2 sec to be noticable enough"
+    )
     quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 })
 quest_Note_3.quest_Show_String_For_Note_Big_Func(
 "Setup Stack"
 )
-quest_Note_1.quest_Show_String_For_Note_Big_Func(
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
 "Micro:bit Display: Upside-Down ~ Driver's Viewpoint"
 )
 display.rotateTo(display.Direction.UpsideDown)
 basic.showIcon(IconNames.Happy)
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
+"hold this state for 2 sec to be noticable enough"
+)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
-quest_Note_1.quest_Show_String_For_Note_Big_Func(
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
 "Setup Servo_Wheels to Stop (0% Power)"
 )
 basic.showLeds(`
@@ -191,7 +219,13 @@ quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorWheel_Left__S0_MotorWheel_Righ
 0,
 0
 )
-setup_More_Function()
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
+"Call this Function for Setup-Additional"
+)
+setup_Additional_Function()
+quest_Note_1.quest_Show_String_For_Note_Small_Func(
+"hold this state for 2 sec to be noticable enough"
+)
 quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 basic.forever(function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
